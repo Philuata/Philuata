@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philuata</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PHILUATA</h1>
+        <nav>
+            <ul>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#buy">Buy Music</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="music">
+        <h2>Discover Philuata's Music</h2>
+        <div class="music-grid">
+            <div class="music-item">
+                <img src="album1.jpg" alt="Album 1">
+                <p>Album Title 1</p>
+            </div>
+            <div class="music-item">
+                <img src="album2.jpg" alt="Album 2">
+                <p>Album Title 2</p>
+            </div>
+            <!-- Add more albums as needed -->
+        </div>
+    </section>
+
+    <section id="buy">
+        <h2>Buy Philuata's Music</h2>
+        <div class="buy-grid">
+            <div class="buy-item">
+                <img src="album1.jpg" alt="Album 1">
+                <button>Buy Now</button>
+            </div>
+            <div class="buy-item">
+                <img src="album2.jpg" alt="Album 2">
+                <button>Buy Now</button>
+            </div>
+            <!-- Add more albums as needed -->
+        </div>
+    </section>
+
+    <section id="signup">
+        <h2>Sign Up for Updates</h2>
+        <form action="#" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Philuata. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+    color: #7f7f7f;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: #4f4f4f;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #7f7f7f;
+    font-size: 1.2em;
+}
+
+section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.music-grid, .buy-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.music-item, .buy-item {
+    width: 200px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #4f4f4f;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3a3a3a;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    color: #4f4f4f;
+}
